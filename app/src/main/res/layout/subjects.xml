@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sub_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#E00C0C"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,389 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/DarkWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DarkWhite">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:background="@color/DarkWhite"
+            android:rowCount="1"
+            android:columnCount="1">
+
+            //Profile Header
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profie_header"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="30dp"
+                android:background="@color/DarkWhite">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="PROFILE"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/profile_header_image" />
+                        <TextView
+                            android:id="@+id/profile_header_name"
+                            android:layout_marginTop="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="24sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/profile_header_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="normal"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+                        <ImageView
+                            android:id="@+id/set_image"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/setimageicon"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/cancel_image"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/cancelimageicon"
+                            android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            //Profile Header
+
+            // Profile Data
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-20dp"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@color/DarkWhite">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        // name
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/profile_image"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                            <ImageView
+                                android:id="@+id/update_name_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/edit_profile_btn"
+                                android:layout_gravity="right"
+                                android:elevation="20dp"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        // name
+
+                        //Email
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/profile_email"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/profile_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                                <ImageView
+                                    android:id="@+id/update_email_btn"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/edit_profile_btn"
+                                    android:layout_gravity="right"
+                                    android:elevation="20dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        //Email
+                        //Phone
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/profile_phone"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/profile_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                                <ImageView
+                                    android:id="@+id/update_phone_btn"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/edit_profile_btn"
+                                    android:layout_gravity="right"
+                                    android:elevation="20dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        //Phone
+                        //Gender
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/profile_gender"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/profile_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                                <ImageView
+                                    android:id="@+id/update_gender_btn"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/edit_profile_btn"
+                                    android:layout_gravity="right"
+                                    android:elevation="20dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        //Gender
+                        //Department
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/profile_department"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/profile_department"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                                <ImageView
+                                    android:id="@+id/update_department_btn"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/edit_profile_btn"
+                                    android:layout_gravity="right"
+                                    android:elevation="20dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        //Department
+                        //Semester
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="50dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/semester_profile_icon"/>
+                            <ScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:id="@+id/profile_semester"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:textStyle="bold" />
+                            </ScrollView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right"
+                                android:gravity="right">
+                                <ImageView
+                                    android:id="@+id/update_semester_btn"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/edit_profile_btn"
+                                    android:layout_gravity="right"
+                                    android:elevation="20dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        //Semester
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            // Profile Data
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

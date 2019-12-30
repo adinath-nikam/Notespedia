@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/semester_gradient">
+    <!-- Dev Code starts-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <!-- 1st row starts-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            android:columnCount="1">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/first_semester_id"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 1"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 1st row ends -->
+            <!-- 2nd row starts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 2"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 2nd row ends -->
+            <!-- 3rd row starts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 3"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 4th row ends --><!-- 2nd row starts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 4"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 4th row ends -->
+            <!-- 5th row starts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 5"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 5th row ends -->
+            <!-- 6th row starts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEMESTER 6"
+                        android:textColor="#E00C0C"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- 6th row ends -->
+        </GridLayout>
+    </LinearLayout>
+    <!-- Dev Code starts-->
+</ScrollView>

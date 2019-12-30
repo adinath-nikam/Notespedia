@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:contentPadding="15dp"
+        app:contentPaddingTop="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/MsgUser_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/profile_icon"/>
+
+
+            <TextView
+                android:id="@+id/MsgUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/MsgUser_pic"
+                android:text="Anonymous" />
+
+
+
+            <TextView
+                android:id="@+id/MsgDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec 25,2019"
+                android:layout_toRightOf="@id/MsgUser_pic"
+                android:textSize="10sp"
+                android:layout_below="@id/MsgUsername"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/divider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text=" ■ "
+                android:layout_toRightOf="@id/MsgDate"
+                android:layout_below="@id/MsgUsername"
+                android:gravity="center"
+                android:textSize="5sp"
+                android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                android:id="@+id/MsgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:30 AM"
+                android:textSize="10sp"
+                android:layout_below="@id/MsgUsername"
+                android:layout_toRightOf="@id/divider2"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/MsgBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message Body"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/MsgUser_pic"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetProfilePic"
+    android:background="@color/RoyalBlue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pirata_one"
+            android:gravity="center"
+            android:text="Want to set profile pic ?"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_marginTop="100dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profile_icon"
+            />
+
+        <Button
+            android:id="@+id/pick_image_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/red"
+            android:text="SELECT IMAGE"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/set_picture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET PROFILE PICTURE"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/skip_set_profile_pic"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Skip"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/next_TextView"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Next >>"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

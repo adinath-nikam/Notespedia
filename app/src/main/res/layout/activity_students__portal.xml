@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Students_Portal">
+
+    <include
+        android:id="@+id/student_portal_page_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomScreen"
+        android:layout_below="@id/student_portal_page_toolbar"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etMessages_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Message.."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp">
+            <ImageButton
+                android:id="@+id/send_msg_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/send_msg_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
