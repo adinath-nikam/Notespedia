@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Notespedia - The learning platform</string>
+
+
+    <string-array name="Departments">
+        <item>Select Your Course..</item>
+        <item>COMPUTER SCIENCE AND ENGINEERING</item>
+        <item>MECHANICAL ENGINEERING</item>
+        <item>AUTOMOBILE ENGINEERING</item>
+        <item>ELECTRICAL AND ELECTRONICS ENGINEERING</item>
+        <item>ELECTRONICS and COMMUNICATION ENGINEERING</item>
+        <item>CIVIL ENGINEERING</item>
+        <item>MECHATRONICS ENGINEERING</item>
+    </string-array>
+    <string-array name="Semesters">
+        <item>Select Your Semester..</item>
+        <item>1ST SEMESTER</item>
+        <item>2ND SEMESTER</item>
+        <item>3RD SEMESTER</item>
+        <item>4TH SEMESTER</item>
+        <item>5TH SEMESTER</item>
+        <item>6TH SEMESTER</item>
+    </string-array>
+
+
+</resources>
