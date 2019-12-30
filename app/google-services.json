@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361323045401",
+    "firebase_url": "https://notespedia-28d9c.firebaseio.com",
+    "project_id": "notespedia-28d9c",
+    "storage_bucket": "notespedia-28d9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361323045401:android:9bbf18440d2b71f9b94088",
+        "android_client_info": {
+          "package_name": "com.thehyperprogrammer.notespedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361323045401-5rlnbanapvebhfvm9q74fsuq19dh0fat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thehyperprogrammer.notespedia",
+            "certificate_hash": "faba194828d5e8b471d137baa38878700a748c4c"
+          }
+        },
+        {
+          "client_id": "361323045401-quo513agk6fr0q512hff9q6it2o7nfvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKK9YBknPQ7l8WnInKeH0rG6WkBga7edc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361323045401-quo513agk6fr0q512hff9q6it2o7nfvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
